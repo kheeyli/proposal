@@ -1,0 +1,93 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.header-right a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.header-right a.active {
+    font-weight: bold;
+}
+
+/* Container styling */
+.container {
+    display: grid;
+    grid-template-columns: 600px auto;
+    gap: 5px;
+    padding: 50px;
+}
+
+/* Left section styling */
+.leftsection {
+    display: grid;
+    justify-items: center;
+    width: 40%;
+}
+
+.ui-image {
+    margin-left: 200px;
+}
+
+.ui-image img {
+    width: 230px;
+    height: 480px;
+}
+
+/* Right section styling */
+.rightsection {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: column; /* Stack items vertically */
+    width: 90%;
+}
+
+.flex-item {
+    display: grid;
+    grid-template-rows:  200px 30px auto;
+    grid-template-columns: auto;
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+.icon {
+    justify-self: center;
+}
+
+.icon img {
+    width: 180px;
+    height: 180px;
+}
+
+/* Common styling for icon-name and description */
+.icon-name {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.description{
+    padding: 20px;
+    text-align: justify;
+
+    font-size: 20px;
+    
+}
