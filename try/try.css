@@ -1,3 +1,6 @@
+
+
+/* Rest of your existing CSS */
 body, html {
     margin: 0;
     padding: 0;
@@ -7,18 +10,27 @@ body, html {
 }
 
 .logo {
-    width: 60x;
-    height: 60px;
-    margin-left: 100px;
-    margin-top: 5px;
+    width: 43px;
+    height: 50px;
+    margin-left: 90px;
 }
 
-/* Header styling */
+.come-and-play {
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: 26px;
+    text-align: justify;
+    position: absolute;
+    top: 12px; 
+    left: 294px; 
+}
+
 .header {
+    
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-left: 240px;
+    padding-left: 150px;
     padding-right: 150px;
     background-color: transparent;
     color: #fff;
@@ -27,94 +39,89 @@ body, html {
 .header-right a {
     color: #fff;
     margin-left: 20px;
-    text-decoration: none;
-    font-size: 20px;
+    padding-top: 50px;
+    font-size: 21px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+    text-decoration: none; }
 
 .header-right a.active {
     font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 3px;
 }
 
-/* Container styling */
 .container {
     display: grid;
     grid-template-columns: 600px auto;
-    gap: 5px;
     padding: 50px;
+    padding-right: 100px;
+    margin-top: 10px;
 }
 
-/* Left section styling */
+
 .leftsection {
     display: grid;
     justify-items: center;
-    width: 40%;
 }
 
 .ui-image {
-    margin-left: 200px;
+    padding-left: 150px;
 }
 
 .ui-image img {
-    width: 350px;
-    height: 720px;
+    width: 330px;
+    height: 680px;
+    box-shadow: 0 0 55px 3px rgba(240, 240, 255, 0.9); 
+    border-radius: 60px;
 }
 
-/* Right section styling */
 .rightsection {
     display: grid;
     grid-template-columns: 447.6;
-    grid-auto-flow: column; /* Stack items vertically */
-    width: 100%;
+    grid-auto-flow: column; 
     margin-top: 150px;
 }
 
 .TexasFeature {
-    font-size: 60px; 
+    font-size: 55px; 
     font-weight: bold;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     margin-left: 20px; 
     position: absolute;
-    top: 80px; 
-    left: 670px; 
+    top: 120px; 
+    left: 650px; 
 }
-
 
 .flex-item {
     display: grid;
-    grid-template-rows:  200px 68px auto;
+    grid-template-rows:  220px 68px auto;
     grid-template-columns: auto;
     color: white;
     width: 100%;
-    padding: 10px;
 }
 
 .icon1, .icon2, .icon3 {
     justify-self: center;
-    
 }
 
-.icon1 img {
-   
+.icon1 img { 
     width: 220px;
     height: 200px;
 }
 
 .icon2 img {
-    justify-self: center;
-    width: 290px;
+    width: 300px;
     height: 210px;
 }
 
 .icon3 img {
-    justify-self: center;
     width: 187px;
     height: 205px;
 }
 
 
-/* Common styling for icon-name and description */
 .icon-name {
     text-align: center;
     font-size: 30px;
@@ -126,6 +133,17 @@ body, html {
 .description{
     padding: 15px;
     text-align: justify;
-    font-size: 20px;
+    font-size: 22px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+.highlight-box {
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.highlight-box:hover {
+    transform: scale(1.2);
+}
+
